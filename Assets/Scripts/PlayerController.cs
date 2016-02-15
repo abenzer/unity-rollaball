@@ -7,6 +7,10 @@ public class PlayerController : MonoBehaviour {
 	public float speed;
 	public Text countText;
 	public Text winText;
+	public Text timerText;
+	public bool hasWon;
+	public AudioClip chomp;
+	public AudioClip cheer;
 
 	private Rigidbody rb;
 	private int count;
@@ -17,10 +21,17 @@ public class PlayerController : MonoBehaviour {
 		count = 0;
 		SetCountText ();
 		winText.text = "";
+		timerText.text = "";
+		hasWon = false;
 	}
 	
 	void FixedUpdate()
 	{
+		if (hasWon == false) { 
+			double timeSinceStartup = System.Math.Round (Time.realtimeSinceStartup, 2);
+			timerText.text = timeSinceStartup.ToString ();
+		}
+
 		// desktop
 		if(SystemInfo.deviceType == DeviceType.Desktop) {
 			float moveHorizontal = Input.GetAxis ("Horizontal");
@@ -45,14 +56,18 @@ public class PlayerController : MonoBehaviour {
 			other.gameObject.SetActive (false);
 			count = count + 1;
 			SetCountText ();
+			AudioSource.PlayClipAtPoint(chomp, transform.position, 1.0F);  
 		}
 	}
 
 	void SetCountText() 
 	{
-		countText.text = "Count: " + count.ToString ();
+		countText.text = count.ToString () + "/37";
 		if (count >= 37) {
-			winText.text = "You win!";
+			winText.text = timerText.text;
+			timerText.text = "";
+			hasWon = true;
+			AudioSource.PlayClipAtPoint(cheer, transform.position);
 		}
 	}
 
