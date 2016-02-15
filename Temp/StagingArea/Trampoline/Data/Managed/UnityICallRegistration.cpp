@@ -1,4 +1,4 @@
-//Generated on : 2/15/2016 1:26:21 AM
+//Generated on : 2/15/2016 2:49:34 AM
 void RegisterAllStrippedInternalCalls()
 {
 	//Start Registrations for type : UnityEngine.AnimationCurve
@@ -1091,6 +1091,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Input_get_compositionString();
 		Register_UnityEngine_Input_get_compositionString();
 
+		//System.Void UnityEngine.Input::INTERNAL_get_acceleration(UnityEngine.Vector3&)
+		void Register_UnityEngine_Input_INTERNAL_get_acceleration();
+		Register_UnityEngine_Input_INTERNAL_get_acceleration();
+
 		//System.Void UnityEngine.Input::INTERNAL_get_mousePosition(UnityEngine.Vector3&)
 		void Register_UnityEngine_Input_INTERNAL_get_mousePosition();
 		Register_UnityEngine_Input_INTERNAL_get_mousePosition();
@@ -1944,6 +1948,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Sprites_DataUtility_Internal_GetMinSize();
 
 	//End Registrations for type : UnityEngine.Sprites.DataUtility
+
+	//Start Registrations for type : UnityEngine.SystemInfo
+
+		//UnityEngine.DeviceType UnityEngine.SystemInfo::get_deviceType()
+		void Register_UnityEngine_SystemInfo_get_deviceType();
+		Register_UnityEngine_SystemInfo_get_deviceType();
+
+	//End Registrations for type : UnityEngine.SystemInfo
 
 	//Start Registrations for type : UnityEngine.TextGenerator
 

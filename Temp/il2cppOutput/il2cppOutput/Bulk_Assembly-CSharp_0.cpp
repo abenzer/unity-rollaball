@@ -51,15 +51,17 @@ struct Rotator_t3048826765;
 #include "mscorlib_System_String968488902.h"
 #include "mscorlib_System_String968488902MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Text3286458198MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_SystemInfo4158905322MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Input1593691127MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Rigidbody1972007546MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Time1525492538MethodDeclarations.h"
 #include "mscorlib_System_Single958209021.h"
+#include "UnityEngine_UnityEngine_DeviceType2574109.h"
 #include "UnityEngine_UnityEngine_Collider955670625.h"
 #include "mscorlib_System_Boolean211005341.h"
 #include "mscorlib_System_Int322847414787MethodDeclarations.h"
 #include "AssemblyU2DCSharp_Rotator3048826765.h"
 #include "AssemblyU2DCSharp_Rotator3048826765MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Time1525492538MethodDeclarations.h"
 
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  Object_t * Component_GetComponent_TisObject_t_m267839954_gshared (Component_t2126946602 * __this, const MethodInfo* method);
@@ -162,21 +164,56 @@ extern "C"  void PlayerController_FixedUpdate_m270852281 (PlayerController_t2866
 	float V_0 = 0.0f;
 	float V_1 = 0.0f;
 	Vector3_t3525329789  V_2 = {0};
+	Vector3_t3525329789  V_3 = {0};
+	Vector3_t3525329789  V_4 = {0};
+	Vector3_t3525329789  V_5 = {0};
+	{
+		int32_t L_0 = SystemInfo_get_deviceType_m2827604277(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if ((!(((uint32_t)L_0) == ((uint32_t)3))))
+		{
+			goto IL_004b;
+		}
+	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Input_t1593691127_il2cpp_TypeInfo_var);
-		float L_0 = Input_GetAxis_m2027668530(NULL /*static, unused*/, _stringLiteral3381094468, /*hidden argument*/NULL);
-		V_0 = L_0;
-		float L_1 = Input_GetAxis_m2027668530(NULL /*static, unused*/, _stringLiteral2375469974, /*hidden argument*/NULL);
-		V_1 = L_1;
-		float L_2 = V_0;
-		float L_3 = V_1;
-		Vector3__ctor_m2926210380((&V_2), L_2, (0.0f), L_3, /*hidden argument*/NULL);
-		Rigidbody_t1972007546 * L_4 = (__this->___rb_5);
-		Vector3_t3525329789  L_5 = V_2;
-		float L_6 = (__this->___speed_2);
-		Vector3_t3525329789  L_7 = Vector3_op_Multiply_m973638459(NULL /*static, unused*/, L_5, L_6, /*hidden argument*/NULL);
-		NullCheck(L_4);
-		Rigidbody_AddForce_m3682301239(L_4, L_7, /*hidden argument*/NULL);
+		float L_1 = Input_GetAxis_m2027668530(NULL /*static, unused*/, _stringLiteral3381094468, /*hidden argument*/NULL);
+		V_0 = L_1;
+		float L_2 = Input_GetAxis_m2027668530(NULL /*static, unused*/, _stringLiteral2375469974, /*hidden argument*/NULL);
+		V_1 = L_2;
+		float L_3 = V_0;
+		float L_4 = V_1;
+		Vector3__ctor_m2926210380((&V_2), L_3, (0.0f), L_4, /*hidden argument*/NULL);
+		Rigidbody_t1972007546 * L_5 = (__this->___rb_5);
+		Vector3_t3525329789  L_6 = V_2;
+		float L_7 = (__this->___speed_2);
+		Vector3_t3525329789  L_8 = Vector3_op_Multiply_m973638459(NULL /*static, unused*/, L_6, L_7, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Rigidbody_AddForce_m3682301239(L_5, L_8, /*hidden argument*/NULL);
+		goto IL_00a0;
+	}
+
+IL_004b:
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1593691127_il2cpp_TypeInfo_var);
+		Vector3_t3525329789  L_9 = Input_get_acceleration_m3697865796(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_4 = L_9;
+		float L_10 = ((&V_4)->___x_1);
+		Vector3_t3525329789  L_11 = Input_get_acceleration_m3697865796(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_5 = L_11;
+		float L_12 = ((&V_5)->___y_2);
+		Vector3__ctor_m2926210380((&V_3), ((float)((float)L_10*(float)(60.0f))), (0.0f), ((float)((float)L_12*(float)(60.0f))), /*hidden argument*/NULL);
+		Rigidbody_t1972007546 * L_13 = (__this->___rb_5);
+		Vector3_t3525329789  L_14 = V_3;
+		float L_15 = (__this->___speed_2);
+		Vector3_t3525329789  L_16 = Vector3_op_Multiply_m973638459(NULL /*static, unused*/, L_14, L_15, /*hidden argument*/NULL);
+		float L_17 = Time_get_deltaTime_m2741110510(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_18 = Vector3_op_Multiply_m973638459(NULL /*static, unused*/, L_16, L_17, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		Rigidbody_AddForce_m3682301239(L_13, L_18, /*hidden argument*/NULL);
+	}
+
+IL_00a0:
+	{
 		return;
 	}
 }
@@ -240,7 +277,7 @@ extern "C"  void PlayerController_SetCountText_m1021738208 (PlayerController_t28
 		NullCheck(L_0);
 		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, L_3);
 		int32_t L_4 = (__this->___count_6);
-		if ((((int32_t)L_4) < ((int32_t)((int32_t)9))))
+		if ((((int32_t)L_4) < ((int32_t)((int32_t)37))))
 		{
 			goto IL_003d;
 		}

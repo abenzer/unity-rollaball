@@ -13,6 +13,14 @@
 #include <limits>
 #include <assert.h>
 
+// UnityEngine.GUISkin/SkinChangedDelegate
+struct SkinChangedDelegate_t914030844;
+// System.Object
+struct Object_t;
+// System.IAsyncResult
+struct IAsyncResult_t537683269;
+// System.AsyncCallback
+struct AsyncCallback_t1363551830;
 // UnityEngine.GUIStyle
 struct GUIStyle_t1006925219;
 // UnityEngine.GUIStyleState
@@ -44,18 +52,12 @@ struct StringU5BU5D_t2956870243;
 struct IL2CPPStructAlignmentAttribute_t3787694287;
 // UnityEngine.Internal.DefaultValueAttribute
 struct DefaultValueAttribute_t116041064;
-// System.Object
-struct Object_t;
 // UnityEngine.Internal.ExcludeFromDocsAttribute
 struct ExcludeFromDocsAttribute_t2739928377;
 // UnityEngine.iOS.ADBannerView
 struct ADBannerView_t2458921414;
 // UnityEngine.iOS.ADBannerView/BannerFailedToLoadDelegate
 struct BannerFailedToLoadDelegate_t2071786927;
-// System.IAsyncResult
-struct IAsyncResult_t537683269;
-// System.AsyncCallback
-struct AsyncCallback_t1363551830;
 // UnityEngine.iOS.ADBannerView/BannerWasClickedDelegate
 struct BannerWasClickedDelegate_t1325188367;
 // UnityEngine.iOS.ADBannerView/BannerWasLoadedDelegate
@@ -215,23 +217,22 @@ struct UserProfile_t2517340964;
 struct IScore_t3029734269;
 // UnityEngine.SocialPlatforms.IScore[]
 struct IScoreU5BU5D_t684312048;
-// UnityEngine.SocialPlatforms.Impl.LocalUser
-struct LocalUser_t2259562908;
-// UnityEngine.SocialPlatforms.IUserProfile[]
-struct IUserProfileU5BU5D_t2316972724;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
+#include "UnityEngine_UnityEngine_GUISkin_SkinChangedDelegate914030844.h"
+#include "UnityEngine_UnityEngine_GUISkin_SkinChangedDelegate914030844MethodDeclarations.h"
+#include "mscorlib_System_Object837106420.h"
+#include "mscorlib_System_IntPtr676692020.h"
+#include "mscorlib_System_Void2779279689.h"
+#include "mscorlib_System_AsyncCallback1363551830.h"
 #include "UnityEngine_UnityEngine_GUIStyle1006925219.h"
 #include "UnityEngine_UnityEngine_GUIStyle1006925219MethodDeclarations.h"
-#include "mscorlib_System_Void2779279689.h"
 #include "mscorlib_System_Object837106420MethodDeclarations.h"
 #include "mscorlib_System_Boolean211005341.h"
-#include "mscorlib_System_Object837106420.h"
 #include "UnityEngine_UnityEngine_GUIStyleState47287592MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Font1525081276.h"
-#include "mscorlib_System_IntPtr676692020.h"
 #include "mscorlib_System_Int322847414787.h"
 #include "UnityEngine_UnityEngine_GUIStyleState47287592.h"
 #include "UnityEngine_UnityEngine_RectOffset3394170884.h"
@@ -322,7 +323,6 @@ struct IUserProfileU5BU5D_t2316972724;
 #include "UnityEngine_UnityEngine_iOS_ADBannerView_BannerWasLo69910023.h"
 #include "UnityEngine_UnityEngine_iOS_ADBannerView_BannerFai2071786927MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_iOS_ADBannerView_BannerFai2071786927.h"
-#include "mscorlib_System_AsyncCallback1363551830.h"
 #include "UnityEngine_UnityEngine_iOS_ADInterstitialAd264752324.h"
 #include "UnityEngine_UnityEngine_iOS_ADInterstitialAd264752324MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_iOS_ADInterstitialAd_Inter2963828231MethodDeclarations.h"
@@ -562,6 +562,52 @@ extern "C"  Object_t * Component_GetComponent_TisObject_t_m267839954_gshared (Co
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.GUISkin/SkinChangedDelegate::.ctor(System.Object,System.IntPtr)
+extern "C"  void SkinChangedDelegate__ctor_m1472037998 (SkinChangedDelegate_t914030844 * __this, Object_t * ___object, IntPtr_t ___method, const MethodInfo* method)
+{
+	__this->___method_ptr_0 = (methodPointerType)((MethodInfo*)___method.___m_value_0)->method;
+	__this->___method_3 = ___method;
+	__this->___m_target_2 = ___object;
+}
+// System.Void UnityEngine.GUISkin/SkinChangedDelegate::Invoke()
+extern "C"  void SkinChangedDelegate_Invoke_m3141787208 (SkinChangedDelegate_t914030844 * __this, const MethodInfo* method)
+{
+	if(__this->___prev_9 != NULL)
+	{
+		SkinChangedDelegate_Invoke_m3141787208((SkinChangedDelegate_t914030844 *)__this->___prev_9, method);
+	}
+	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->___method_3.___m_value_0));
+	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->___method_3.___m_value_0));
+	if ((__this->___m_target_2 != NULL || MethodHasParameters((MethodInfo*)(__this->___method_3.___m_value_0))) && ___methodIsStatic)
+	{
+		typedef void (*FunctionPointerType) (Object_t *, void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->___method_ptr_0)(NULL,il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->___method_3.___m_value_0));
+	}
+	else
+	{
+		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
+		((FunctionPointerType)__this->___method_ptr_0)(il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->___method_3.___m_value_0));
+	}
+}
+extern "C" void pinvoke_delegate_wrapper_SkinChangedDelegate_t914030844(Il2CppObject* delegate)
+{
+	typedef void (STDCALL *native_function_ptr_type)();
+	native_function_ptr_type _il2cpp_pinvoke_func = ((native_function_ptr_type)((Il2CppDelegate*)delegate)->method->method);
+	// Native function invocation
+	_il2cpp_pinvoke_func();
+
+}
+// System.IAsyncResult UnityEngine.GUISkin/SkinChangedDelegate::BeginInvoke(System.AsyncCallback,System.Object)
+extern "C"  Object_t * SkinChangedDelegate_BeginInvoke_m1122457923 (SkinChangedDelegate_t914030844 * __this, AsyncCallback_t1363551830 * ___callback, Object_t * ___object, const MethodInfo* method)
+{
+	void *__d_args[1] = {0};
+	return (Object_t *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback, (Il2CppObject*)___object);
+}
+// System.Void UnityEngine.GUISkin/SkinChangedDelegate::EndInvoke(System.IAsyncResult)
+extern "C"  void SkinChangedDelegate_EndInvoke_m3094371710 (SkinChangedDelegate_t914030844 * __this, Object_t * ___result, const MethodInfo* method)
+{
+	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
+}
 // System.Void UnityEngine.GUIStyle::.ctor()
 extern "C"  void GUIStyle__ctor_m478034167 (GUIStyle_t1006925219 * __this, const MethodInfo* method)
 {
@@ -3883,6 +3929,34 @@ extern "C"  bool Input_get_mousePresent_m3235491246 (Object_t * __this /* static
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Input_get_mousePresent_m3235491246_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::get_mousePresent()");
 	return _il2cpp_icall_func();
+}
+// UnityEngine.Vector3 UnityEngine.Input::get_acceleration()
+extern TypeInfo* Input_t1593691127_il2cpp_TypeInfo_var;
+extern const uint32_t Input_get_acceleration_m3697865796_MetadataUsageId;
+extern "C"  Vector3_t3525329789  Input_get_acceleration_m3697865796 (Object_t * __this /* static, unused */, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (Input_get_acceleration_m3697865796_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Vector3_t3525329789  V_0 = {0};
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Input_t1593691127_il2cpp_TypeInfo_var);
+		Input_INTERNAL_get_acceleration_m3372612331(NULL /*static, unused*/, (&V_0), /*hidden argument*/NULL);
+		Vector3_t3525329789  L_0 = V_0;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.Input::INTERNAL_get_acceleration(UnityEngine.Vector3&)
+extern "C"  void Input_INTERNAL_get_acceleration_m3372612331 (Object_t * __this /* static, unused */, Vector3_t3525329789 * ___value, const MethodInfo* method)
+{
+	typedef void (*Input_INTERNAL_get_acceleration_m3372612331_ftn) (Vector3_t3525329789 *);
+	static Input_INTERNAL_get_acceleration_m3372612331_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Input_INTERNAL_get_acceleration_m3372612331_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::INTERNAL_get_acceleration(UnityEngine.Vector3&)");
+	_il2cpp_icall_func(___value);
 }
 // UnityEngine.Touch UnityEngine.Input::GetTouch(System.Int32)
 extern "C"  Touch_t1603883884  Input_GetTouch_m2282421092 (Object_t * __this /* static, unused */, int32_t ___index, const MethodInfo* method)
@@ -15472,60 +15546,6 @@ extern "C"  void Leaderboard_set_timeScope_m3669793618 (Leaderboard_t1422561091 
 		int32_t L_0 = ___value;
 		__this->___U3CtimeScopeU3Ek__BackingField_9 = L_0;
 		return;
-	}
-}
-// System.Void UnityEngine.SocialPlatforms.Impl.LocalUser::.ctor()
-extern TypeInfo* UserProfileU5BU5D_t1345038285_il2cpp_TypeInfo_var;
-extern const uint32_t LocalUser__ctor_m1052633066_MetadataUsageId;
-extern "C"  void LocalUser__ctor_m1052633066 (LocalUser_t2259562908 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (LocalUser__ctor_m1052633066_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		UserProfile__ctor_m1280449570(__this, /*hidden argument*/NULL);
-		__this->___m_Friends_5 = (IUserProfileU5BU5D_t2316972724*)((UserProfileU5BU5D_t1345038285*)SZArrayNew(UserProfileU5BU5D_t1345038285_il2cpp_TypeInfo_var, (uint32_t)0));
-		__this->___m_Authenticated_6 = (bool)0;
-		__this->___m_Underage_7 = (bool)0;
-		return;
-	}
-}
-// System.Void UnityEngine.SocialPlatforms.Impl.LocalUser::SetFriends(UnityEngine.SocialPlatforms.IUserProfile[])
-extern "C"  void LocalUser_SetFriends_m3475409220 (LocalUser_t2259562908 * __this, IUserProfileU5BU5D_t2316972724* ___friends, const MethodInfo* method)
-{
-	{
-		IUserProfileU5BU5D_t2316972724* L_0 = ___friends;
-		__this->___m_Friends_5 = L_0;
-		return;
-	}
-}
-// System.Void UnityEngine.SocialPlatforms.Impl.LocalUser::SetAuthenticated(System.Boolean)
-extern "C"  void LocalUser_SetAuthenticated_m653377406 (LocalUser_t2259562908 * __this, bool ___value, const MethodInfo* method)
-{
-	{
-		bool L_0 = ___value;
-		__this->___m_Authenticated_6 = L_0;
-		return;
-	}
-}
-// System.Void UnityEngine.SocialPlatforms.Impl.LocalUser::SetUnderage(System.Boolean)
-extern "C"  void LocalUser_SetUnderage_m2968368872 (LocalUser_t2259562908 * __this, bool ___value, const MethodInfo* method)
-{
-	{
-		bool L_0 = ___value;
-		__this->___m_Underage_7 = L_0;
-		return;
-	}
-}
-// System.Boolean UnityEngine.SocialPlatforms.Impl.LocalUser::get_authenticated()
-extern "C"  bool LocalUser_get_authenticated_m3657159816 (LocalUser_t2259562908 * __this, const MethodInfo* method)
-{
-	{
-		bool L_0 = (__this->___m_Authenticated_6);
-		return L_0;
 	}
 }
 #ifdef __clang__

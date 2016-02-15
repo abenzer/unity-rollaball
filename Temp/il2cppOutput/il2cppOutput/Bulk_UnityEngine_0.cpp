@@ -239,8 +239,6 @@ struct GUIScrollGroup_t1067753444;
 struct GUISettings_t1668697771;
 // UnityEngine.GUIStyle[]
 struct GUIStyleU5BU5D_t3748644978;
-// UnityEngine.GUISkin/SkinChangedDelegate
-struct SkinChangedDelegate_t914030844;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -424,6 +422,8 @@ struct SkinChangedDelegate_t914030844;
 #include "UnityEngine_UnityEngine_DebugLogHandler931256902.h"
 #include "UnityEngine_UnityEngine_Logger3804382717.h"
 #include "mscorlib_System_Exception1967233988.h"
+#include "UnityEngine_UnityEngine_DeviceType2574109.h"
+#include "UnityEngine_UnityEngine_DeviceType2574109MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_DisallowMultipleComponent3647875775MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Display564335855.h"
 #include "UnityEngine_UnityEngine_Display564335855MethodDeclarations.h"
@@ -16459,52 +16459,6 @@ IL_0011:
 		Object_t * L_5 = Box(Enumerator_t2411651064_il2cpp_TypeInfo_var, &L_4);
 		return (Object_t *)L_5;
 	}
-}
-// System.Void UnityEngine.GUISkin/SkinChangedDelegate::.ctor(System.Object,System.IntPtr)
-extern "C"  void SkinChangedDelegate__ctor_m1472037998 (SkinChangedDelegate_t914030844 * __this, Object_t * ___object, IntPtr_t ___method, const MethodInfo* method)
-{
-	__this->___method_ptr_0 = (methodPointerType)((MethodInfo*)___method.___m_value_0)->method;
-	__this->___method_3 = ___method;
-	__this->___m_target_2 = ___object;
-}
-// System.Void UnityEngine.GUISkin/SkinChangedDelegate::Invoke()
-extern "C"  void SkinChangedDelegate_Invoke_m3141787208 (SkinChangedDelegate_t914030844 * __this, const MethodInfo* method)
-{
-	if(__this->___prev_9 != NULL)
-	{
-		SkinChangedDelegate_Invoke_m3141787208((SkinChangedDelegate_t914030844 *)__this->___prev_9, method);
-	}
-	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->___method_3.___m_value_0));
-	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->___method_3.___m_value_0));
-	if ((__this->___m_target_2 != NULL || MethodHasParameters((MethodInfo*)(__this->___method_3.___m_value_0))) && ___methodIsStatic)
-	{
-		typedef void (*FunctionPointerType) (Object_t *, void* __this, const MethodInfo* method);
-		((FunctionPointerType)__this->___method_ptr_0)(NULL,il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->___method_3.___m_value_0));
-	}
-	else
-	{
-		typedef void (*FunctionPointerType) (void* __this, const MethodInfo* method);
-		((FunctionPointerType)__this->___method_ptr_0)(il2cpp_codegen_get_delegate_this(__this),(MethodInfo*)(__this->___method_3.___m_value_0));
-	}
-}
-extern "C" void pinvoke_delegate_wrapper_SkinChangedDelegate_t914030844(Il2CppObject* delegate)
-{
-	typedef void (STDCALL *native_function_ptr_type)();
-	native_function_ptr_type _il2cpp_pinvoke_func = ((native_function_ptr_type)((Il2CppDelegate*)delegate)->method->method);
-	// Native function invocation
-	_il2cpp_pinvoke_func();
-
-}
-// System.IAsyncResult UnityEngine.GUISkin/SkinChangedDelegate::BeginInvoke(System.AsyncCallback,System.Object)
-extern "C"  Object_t * SkinChangedDelegate_BeginInvoke_m1122457923 (SkinChangedDelegate_t914030844 * __this, AsyncCallback_t1363551830 * ___callback, Object_t * ___object, const MethodInfo* method)
-{
-	void *__d_args[1] = {0};
-	return (Object_t *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback, (Il2CppObject*)___object);
-}
-// System.Void UnityEngine.GUISkin/SkinChangedDelegate::EndInvoke(System.IAsyncResult)
-extern "C"  void SkinChangedDelegate_EndInvoke_m3094371710 (SkinChangedDelegate_t914030844 * __this, Object_t * ___result, const MethodInfo* method)
-{
-	il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

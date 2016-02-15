@@ -199,6 +199,7 @@ struct Vector4U5BU5D_t3713759435;
 #include "Mono_Security_Mono_Security_Protocol_Tls_Handshake1150764700.h"
 #include "Mono_Security_Mono_Security_Protocol_Tls_Handshake3657199378.h"
 #include "Mono_Security_Mono_Security_Protocol_Tls_ContentTy2785698635.h"
+#include "UnityEngine_UnityEngine_DeviceType2574109.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter1714018390.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter2788044591.h"
 #include "UnityEngine_ArrayTypes.h"
@@ -5697,6 +5698,13 @@ void* RuntimeInvoker_Object_t_Object_t_Object_t_Object_t_Object_t_Object_t_Objec
 	return ret;
 }
 
+void* RuntimeInvoker_DeviceType_t2574109 (const MethodInfo* method, void* obj, void** args)
+{
+	typedef int32_t (*Func)(void* obj, const MethodInfo* method);
+	int32_t ret = ((Func)method->method)(obj, method);
+	return Box(il2cpp_codegen_class_from_type (method->return_type), &ret);
+}
+
 void* RuntimeInvoker_Void_t2779279689_Object_t_Double_t534516614 (const MethodInfo* method, void* obj, void** args)
 {
 	typedef void (*Func)(void* obj, Object_t * p1, double p2, const MethodInfo* method);
@@ -10835,7 +10843,7 @@ void* RuntimeInvoker_Object_t_FloatTween_t587838465 (const MethodInfo* method, v
 	return ret;
 }
 
-extern const InvokerMethod g_Il2CppInvokerPointers[1499] = 
+extern const InvokerMethod g_Il2CppInvokerPointers[1500] = 
 {
 	RuntimeInvoker_Void_t2779279689,
 	RuntimeInvoker_Boolean_t211005341_Object_t,
@@ -11602,6 +11610,7 @@ extern const InvokerMethod g_Il2CppInvokerPointers[1499] =
 	RuntimeInvoker_Void_t2779279689_Object_t_Byte_t2778693821_Object_t,
 	RuntimeInvoker_ContentType_t2785698635,
 	RuntimeInvoker_Object_t_Object_t_Object_t_Object_t_Object_t_Object_t_Object_t,
+	RuntimeInvoker_DeviceType_t2574109,
 	RuntimeInvoker_Void_t2779279689_Object_t_Double_t534516614,
 	RuntimeInvoker_Void_t2779279689_Int64_t2847414882_Object_t,
 	RuntimeInvoker_Void_t2779279689_GcAchievementDescriptionData_t1714018390_Int32_t2847414787,

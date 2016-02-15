@@ -21,12 +21,21 @@ public class PlayerController : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
-		float moveHorizontal = Input.GetAxis ("Horizontal");
-		float moveVertical = Input.GetAxis ("Vertical");
+		// desktop
+		if(SystemInfo.deviceType == DeviceType.Desktop) {
+			float moveHorizontal = Input.GetAxis ("Horizontal");
+			float moveVertical = Input.GetAxis ("Vertical");
 
-		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
+			Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 
-		rb.AddForce (movement * speed);
+			rb.AddForce (movement * speed);
+
+		// iphone
+		} else {
+			Vector3 movement = new Vector3 (Input.acceleration.x*60, 0.0f, Input.acceleration.y*60);
+			// Adding force to rigidbody
+			rb.AddForce(movement * speed * Time.deltaTime);
+		}
 	}
 
 	void OnTriggerEnter(Collider other) 
@@ -42,7 +51,7 @@ public class PlayerController : MonoBehaviour {
 	void SetCountText() 
 	{
 		countText.text = "Count: " + count.ToString ();
-		if (count >= 38) {
+		if (count >= 37) {
 			winText.text = "You win!";
 		}
 	}

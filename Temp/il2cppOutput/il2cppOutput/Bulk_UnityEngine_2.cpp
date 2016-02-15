@@ -13,6 +13,10 @@
 #include <limits>
 #include <assert.h>
 
+// UnityEngine.SocialPlatforms.Impl.LocalUser
+struct LocalUser_t2259562908;
+// UnityEngine.SocialPlatforms.IUserProfile[]
+struct IUserProfileU5BU5D_t2316972724;
 // UnityEngine.SocialPlatforms.Impl.Score
 struct Score_t1540476504;
 // System.String
@@ -108,10 +112,16 @@ struct TypeInferenceRuleAttribute_t471424957;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Local2259562908.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Local2259562908MethodDeclarations.h"
+#include "mscorlib_System_Void2779279689.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_UserP2517340964MethodDeclarations.h"
+#include "UnityEngine_ArrayTypes.h"
+#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_UserP2517340964.h"
+#include "mscorlib_System_Boolean211005341.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Score1540476504.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_Impl_Score1540476504MethodDeclarations.h"
 #include "mscorlib_System_String968488902.h"
-#include "mscorlib_System_Void2779279689.h"
 #include "mscorlib_System_Int642847414882.h"
 #include "mscorlib_System_DateTime339033936MethodDeclarations.h"
 #include "mscorlib_System_DateTime339033936.h"
@@ -120,10 +130,7 @@ struct TypeInferenceRuleAttribute_t471424957;
 #include "mscorlib_System_Object837106420MethodDeclarations.h"
 #include "mscorlib_ArrayTypes.h"
 #include "mscorlib_System_Object837106420.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_UserP2517340964.h"
-#include "UnityEngine_UnityEngine_SocialPlatforms_Impl_UserP2517340964MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Texture2D2509538522MethodDeclarations.h"
-#include "mscorlib_System_Boolean211005341.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_UserState3192499994.h"
 #include "UnityEngine_UnityEngine_Texture2D2509538522.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_Range938821841.h"
@@ -178,6 +185,9 @@ struct TypeInferenceRuleAttribute_t471424957;
 #include "UnityEngine_UnityEngine_Animator792326996.h"
 #include "UnityEngine_UnityEngine_AnimatorStateInfo4162640357.h"
 #include "UnityEngine_UnityEngine_Experimental_Director_Anim1023709642.h"
+#include "UnityEngine_UnityEngine_SystemInfo4158905322.h"
+#include "UnityEngine_UnityEngine_SystemInfo4158905322MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_DeviceType2574109.h"
 #include "UnityEngine_UnityEngine_TextAnchor551935663.h"
 #include "UnityEngine_UnityEngine_TextAnchor551935663MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_TextAreaAttribute185624719.h"
@@ -313,6 +323,60 @@ struct TypeInferenceRuleAttribute_t471424957;
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.SocialPlatforms.Impl.LocalUser::.ctor()
+extern TypeInfo* UserProfileU5BU5D_t1345038285_il2cpp_TypeInfo_var;
+extern const uint32_t LocalUser__ctor_m1052633066_MetadataUsageId;
+extern "C"  void LocalUser__ctor_m1052633066 (LocalUser_t2259562908 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (LocalUser__ctor_m1052633066_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		UserProfile__ctor_m1280449570(__this, /*hidden argument*/NULL);
+		__this->___m_Friends_5 = (IUserProfileU5BU5D_t2316972724*)((UserProfileU5BU5D_t1345038285*)SZArrayNew(UserProfileU5BU5D_t1345038285_il2cpp_TypeInfo_var, (uint32_t)0));
+		__this->___m_Authenticated_6 = (bool)0;
+		__this->___m_Underage_7 = (bool)0;
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.Impl.LocalUser::SetFriends(UnityEngine.SocialPlatforms.IUserProfile[])
+extern "C"  void LocalUser_SetFriends_m3475409220 (LocalUser_t2259562908 * __this, IUserProfileU5BU5D_t2316972724* ___friends, const MethodInfo* method)
+{
+	{
+		IUserProfileU5BU5D_t2316972724* L_0 = ___friends;
+		__this->___m_Friends_5 = L_0;
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.Impl.LocalUser::SetAuthenticated(System.Boolean)
+extern "C"  void LocalUser_SetAuthenticated_m653377406 (LocalUser_t2259562908 * __this, bool ___value, const MethodInfo* method)
+{
+	{
+		bool L_0 = ___value;
+		__this->___m_Authenticated_6 = L_0;
+		return;
+	}
+}
+// System.Void UnityEngine.SocialPlatforms.Impl.LocalUser::SetUnderage(System.Boolean)
+extern "C"  void LocalUser_SetUnderage_m2968368872 (LocalUser_t2259562908 * __this, bool ___value, const MethodInfo* method)
+{
+	{
+		bool L_0 = ___value;
+		__this->___m_Underage_7 = L_0;
+		return;
+	}
+}
+// System.Boolean UnityEngine.SocialPlatforms.Impl.LocalUser::get_authenticated()
+extern "C"  bool LocalUser_get_authenticated_m3657159816 (LocalUser_t2259562908 * __this, const MethodInfo* method)
+{
+	{
+		bool L_0 = (__this->___m_Authenticated_6);
+		return L_0;
+	}
+}
 // System.Void UnityEngine.SocialPlatforms.Impl.Score::.ctor(System.String,System.Int64)
 extern TypeInfo* DateTime_t339033936_il2cpp_TypeInfo_var;
 extern TypeInfo* String_t_il2cpp_TypeInfo_var;
@@ -2190,6 +2254,15 @@ extern "C"  void StateMachineBehaviour_OnStateMachineExit_m2976228338 (StateMach
 	{
 		return;
 	}
+}
+// UnityEngine.DeviceType UnityEngine.SystemInfo::get_deviceType()
+extern "C"  int32_t SystemInfo_get_deviceType_m2827604277 (Object_t * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef int32_t (*SystemInfo_get_deviceType_m2827604277_ftn) ();
+	static SystemInfo_get_deviceType_m2827604277_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SystemInfo_get_deviceType_m2827604277_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SystemInfo::get_deviceType()");
+	return _il2cpp_icall_func();
 }
 // System.Void UnityEngine.TextAreaAttribute::.ctor(System.Int32,System.Int32)
 extern "C"  void TextAreaAttribute__ctor_m2577573455 (TextAreaAttribute_t185624719 * __this, int32_t ___minLines, int32_t ___maxLines, const MethodInfo* method)

@@ -8135,6 +8135,8 @@ extern "C" void Input_INTERNAL_get_mousePosition_m4008828427 ();
 extern "C" void Input_get_mouseScrollDelta_m3050122505 ();
 extern "C" void Input_INTERNAL_get_mouseScrollDelta_m2726147504 ();
 extern "C" void Input_get_mousePresent_m3235491246 ();
+extern "C" void Input_get_acceleration_m3697865796 ();
+extern "C" void Input_INTERNAL_get_acceleration_m3372612331 ();
 extern "C" void Input_GetTouch_m2282421092 ();
 extern "C" void Input_get_touchCount_m1430909390 ();
 extern "C" void Input_get_touchSupported_m634162567 ();
@@ -8776,6 +8778,7 @@ extern "C" void StateMachineBehaviour_OnStateMove_m2938949899 ();
 extern "C" void StateMachineBehaviour_OnStateIK_m3126912700 ();
 extern "C" void StateMachineBehaviour_OnStateMachineEnter_m2392556512 ();
 extern "C" void StateMachineBehaviour_OnStateMachineExit_m2976228338 ();
+extern "C" void SystemInfo_get_deviceType_m2827604277 ();
 extern "C" void TextAreaAttribute__ctor_m2577573455 ();
 extern "C" void TextEditor__ctor_m1029296947 ();
 extern "C" void TextGenerationSettings_CompareColors_m2801108564 ();
@@ -10412,7 +10415,7 @@ extern "C" void PlayerController_OnTriggerEnter_m3392021114 ();
 extern "C" void PlayerController_SetCountText_m1021738208 ();
 extern "C" void Rotator__ctor_m1971779198 ();
 extern "C" void Rotator_Update_m2722475087 ();
-extern const methodPointerType g_MethodPointers[10401] = 
+extern const methodPointerType g_MethodPointers[10404] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -18538,6 +18541,8 @@ extern const methodPointerType g_MethodPointers[10401] =
 	Input_get_mouseScrollDelta_m3050122505,
 	Input_INTERNAL_get_mouseScrollDelta_m2726147504,
 	Input_get_mousePresent_m3235491246,
+	Input_get_acceleration_m3697865796,
+	Input_INTERNAL_get_acceleration_m3372612331,
 	Input_GetTouch_m2282421092,
 	Input_get_touchCount_m1430909390,
 	Input_get_touchSupported_m634162567,
@@ -19179,6 +19184,7 @@ extern const methodPointerType g_MethodPointers[10401] =
 	StateMachineBehaviour_OnStateIK_m3126912700,
 	StateMachineBehaviour_OnStateMachineEnter_m2392556512,
 	StateMachineBehaviour_OnStateMachineExit_m2976228338,
+	SystemInfo_get_deviceType_m2827604277,
 	TextAreaAttribute__ctor_m2577573455,
 	TextEditor__ctor_m1029296947,
 	TextGenerationSettings_CompareColors_m2801108564,

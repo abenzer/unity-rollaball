@@ -46,6 +46,10 @@ extern "C"  Vector2_t3525329788  Input_get_mouseScrollDelta_m3050122505 (Object_
 extern "C"  void Input_INTERNAL_get_mouseScrollDelta_m2726147504 (Object_t * __this /* static, unused */, Vector2_t3525329788 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean UnityEngine.Input::get_mousePresent()
 extern "C"  bool Input_get_mousePresent_m3235491246 (Object_t * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// UnityEngine.Vector3 UnityEngine.Input::get_acceleration()
+extern "C"  Vector3_t3525329789  Input_get_acceleration_m3697865796 (Object_t * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void UnityEngine.Input::INTERNAL_get_acceleration(UnityEngine.Vector3&)
+extern "C"  void Input_INTERNAL_get_acceleration_m3372612331 (Object_t * __this /* static, unused */, Vector3_t3525329789 * ___value, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Touch UnityEngine.Input::GetTouch(System.Int32)
 extern "C"  Touch_t1603883884  Input_GetTouch_m2282421092 (Object_t * __this /* static, unused */, int32_t ___index, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Input::get_touchCount()

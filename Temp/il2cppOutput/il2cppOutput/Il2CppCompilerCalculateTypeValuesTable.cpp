@@ -755,6 +755,7 @@
 #include "UnityEngine_UnityEngine_Space1602970931.h"
 #include "UnityEngine_UnityEngine_RuntimePlatform1574985880.h"
 #include "UnityEngine_UnityEngine_LogType3529269451.h"
+#include "UnityEngine_UnityEngine_DeviceType2574109.h"
 #include "UnityEngine_UnityEngine_WaitForSeconds1291133240.h"
 #include "UnityEngine_UnityEngine_Coroutine2246592261.h"
 #include "UnityEngine_UnityEngine_SocialPlatforms_GameCenter_899915837.h"
@@ -1320,6 +1321,7 @@
 #include "UnityEngine_U3CModuleU3E86524790.h"
 #include "UnityEngine_UnityEngine_AssetBundleCreateRequest2779486190.h"
 #include "UnityEngine_UnityEngine_AssetBundle3959431103.h"
+#include "UnityEngine_UnityEngine_SystemInfo4158905322.h"
 #include "UnityEngine_UnityEngine_WaitForFixedUpdate896427542.h"
 #include "UnityEngine_UnityEngine_WaitForEndOfFrame1917318876.h"
 #include "UnityEngine_UnityEngine_ScriptableObject184905905.h"
@@ -1440,7 +1442,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[6436] = 
+extern const int32_t g_FieldOffsetTable[6441] = 
 {
 	0,
 	0,
@@ -5939,6 +5941,11 @@ extern const int32_t g_FieldOffsetTable[6436] =
 	0,
 	0,
 	0,
+	offsetof(DeviceType_t2574109, ___value___1) + sizeof(Object_t),
+	0,
+	0,
+	0,
+	0,
 	offsetof(WaitForSeconds_t1291133240, ___m_Seconds_0),
 	offsetof(Coroutine_t2246592261, ___m_Ptr_0),
 	offsetof(GameCenterPlatform_t899915837_StaticFields, ___s_AuthenticateCallback_0),
@@ -7882,7 +7889,7 @@ extern const int32_t g_FieldOffsetTable[6436] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1627] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1629] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Object_t), -1, 0, 0,
@@ -9058,6 +9065,8 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1627] =
 	sizeof (Space_t1602970931)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (RuntimePlatform_t1574985880)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (LogType_t3529269451)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (DeviceType_t2574109)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
+	sizeof (SystemInfo_t4158905322), -1, 0, 0,
 	sizeof (WaitForSeconds_t1291133240), sizeof(WaitForSeconds_t1291133240_marshaled), 0, 0,
 	sizeof (WaitForFixedUpdate_t896427542), -1, 0, 0,
 	sizeof (WaitForEndOfFrame_t1917318876), -1, 0, 0,
