@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour {
 	void FixedUpdate()
 	{
 		if (hasWon == false) { 
-			double timeSinceStartup = System.Math.Round (Time.realtimeSinceStartup, 2);
+			double timeSinceStartup = System.Math.Round (Time.timeSinceLevelLoad, 2);
 			timerText.text = timeSinceStartup.ToString ();
 		}
 
